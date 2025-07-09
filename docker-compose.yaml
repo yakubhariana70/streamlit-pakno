@@ -1,0 +1,15 @@
+services:
+  pakno-streamlit-app:
+    build: .
+    container_name: pakno_streamlit
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./files:/app/files
+    restart: unless-stopped
+    networks:
+      - tbg-network
+
+networks:
+  tbg-network:
+    external: true

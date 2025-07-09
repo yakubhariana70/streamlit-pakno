@@ -1,0 +1,8 @@
+# Requirements for Streamlit application
+streamlit
+pandas
+numpy
+openpyxl
+simplekml
+jellyfish
+tqdm
